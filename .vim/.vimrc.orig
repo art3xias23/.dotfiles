@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 "Move to the previous buffer with "gp"
@@ -13,7 +14,13 @@ nnoremap gb :ls<CR>:b
 " Pathogen
 execute pathogen#infect()
 syntax on
+=======
+" Pathogen config
+source ~/vimfiles/autoload/pathogen.vim "location of my pathogen.vim
+call pathogen#infect('bundle/{}')
+call pathogen#helptags()
 set nocp
+>>>>>>> 140a010ecf9cc47a220fcad225d90b0a079246d9
 filetype plugin indent on
 
 " NERDTree
