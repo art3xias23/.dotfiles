@@ -33,6 +33,3 @@ function ToFirefox()
 "    silent '<,'>w ! python -m markdown -f tmp.html | start tmp.html
      :!open -a Firefox %
 endfunction
-
-
-
