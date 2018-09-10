@@ -185,7 +185,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrevious exec playerctl previous
 
 exec_always feh --bg-scale /home/art3xias/Pictures/wallpaper.jpg
-exec_always gnome-terminal
+exec_always i3-sensible-terminal 
 exec_always subl
 
 #Chrome
