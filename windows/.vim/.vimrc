@@ -46,9 +46,9 @@ colorscheme gruvbox
 
 
 "Mappings
-imap <esc> <nop>
-imap jk <esc>:w<cr>
-imap kj <esc>:w<cr>
+ino <esc> <nop>
+ino jk <esc>:w<cr>
+ino kj <esc>:w<cr>
 nnoremap <F4> :exe ':silent !"c:\Program Files\Firefox Developer Edition\firefox.exe" %'<CR>
 
 
