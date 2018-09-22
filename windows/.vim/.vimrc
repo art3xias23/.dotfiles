@@ -10,10 +10,13 @@ call pathogen#helptags()
 " syntax 
 syntax on
 
+" set vim size
+:set lines=35 columns=150
+
 " Detection, Plugin, Indent
 filetype plugin indent on
 
-# Buffers
+" Buffers
 "Move to the previous buffer with "gp"
 nnoremap gp :bp<CR>
 " Move to the next buffer with "gn"
@@ -24,7 +27,7 @@ nnoremap gl :ls<CR>
 nnoremap gb :ls<CR>:b
 " Unbind Escape Key in insert mode. Bind 'jk' or 'kj'.
 
-# non-compatible mode
+" non-compatible mode
 set nocp
 
 " NERDTree
