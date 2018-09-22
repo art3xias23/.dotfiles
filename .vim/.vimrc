@@ -1,3 +1,6 @@
+" Maintainer:	Konstantin Milchev <k.milchev.12@aberdeen.ac.uk>
+" Last change:	2018 Sep 20
+
 " Pathogen config
 source ~/vimfiles/autoload/pathogen.vim "location of my pathogen.vim
 call pathogen#infect('bundle/{}')
