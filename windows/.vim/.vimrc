@@ -5,12 +5,12 @@
 source ~/vimfiles/autoload/pathogen.vim "location of my pathogen.vim
 call pathogen#infect('bundle/{}')
 call pathogen#helptags()
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+" runtime bundle/vim-pathogen/autoload/pathogen.vim
 
-# syntax 
+" syntax 
 syntax on
 
-# Detection, Plugin, Indent
+" Detection, Plugin, Indent
 filetype plugin indent on
 
 # Buffers
