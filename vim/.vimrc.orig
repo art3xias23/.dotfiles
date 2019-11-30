@@ -1,0 +1,99 @@
+<<<<<<< HEAD:.vim/.vimrc
+"Pathogen
+execute pathogen#infect()
+filetype off
+syntax on
+filetype plugin indent on
+
+"Mappings
+imap jk <esc>:w<cr>
+imap kj <esc>:w<cr>
+||||||| merged common ancestors
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+=======
+" Maintainer:	Konstantin Milchev <k.milchev.12@aberdeen.ac.uk>
+" Last change:	2018 Sep 20
+>>>>>>> 82f99dfbdfebf14549c4bbae8e887f5f40624bd8:vim/.vimrc
+
+<<<<<<< HEAD:.vim/.vimrc
+||||||| merged common ancestors
+"Move to the previous buffer with "gp"
+nnoremap gp :bp<CR>
+=======
+" Pathogen config
+source ~/vimfiles/autoload/pathogen.vim "location of my pathogen.vim
+call pathogen#infect('bundle/{}')
+call pathogen#helptags()
+" runtime bundle/vim-pathogen/autoload/pathogen.vim
+
+
+" set vim size
+:set guifont=Consolas:h10
+:set lines=35 columns=150
+
+" set noundo filetype
+:set noundofile
+
+" Detection, Plugin, Indent
+filetype plugin indent on
+
+" syntax 
+syntax on
+
+" Buffers
+"Move to the previous buffer with "gp"
+nnoremap gp :bp<CR>
+>>>>>>> 82f99dfbdfebf14549c4bbae8e887f5f40624bd8:vim/.vimrc
+" Move to the next buffer with "gn"
+nnoremap gn :bn<CR>
+" List all possible buffers with "gl"
+nnoremap gl :ls<CR>
+" List all possible buffers with "gb" and accept a new buffer argument [1]
+nnoremap gb :ls<CR>:b
+
+<<<<<<< HEAD:.vim/.vimrc
+||||||| merged common ancestors
+" Pathogen
+execute pathogen#infect()
+syntax on
+=======
+" non-compatible mode
+>>>>>>> 82f99dfbdfebf14549c4bbae8e887f5f40624bd8:vim/.vimrc
+set nocp
+
+<<<<<<< HEAD:.vim/.vimrc
+||||||| merged common ancestors
+" NERDTree
+autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
+=======
+" NERDTree
+" autocmd vimenter * NERDTree
+" map <C-n> :NERDTreeToggle<CR>
+>>>>>>> 82f99dfbdfebf14549c4bbae8e887f5f40624bd8:vim/.vimrc
+
+" Vim-Notes 
+:let vim_markdown_preview_github=1
+:let g:notes_directories = [ '~/Documents/Notes' ]
+:let g:notes_suffix = '.md'
+:let g:notes_title_sync = 1 
+:let g:notes_markdown_program ='~/Typora/Typora.exe'
+set colorcolumn=160 number
+
+ "Example: To display images automatically on buffer write.
+" let vim_markdown_preview_toggle=2
+" let vim_markdown_preview_browser='Google Chrome'
+
+" Color Scheme
+
+
+"Enable copy
+:set mouse=v
+
+
+" Functions 
+function ToFirefox()
+"    silent '<,'>w ! python -m markdown -f tmp.html | start tmp.html
+     :!open -a Firefox %
+endfunction
+
