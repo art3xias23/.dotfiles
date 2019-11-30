@@ -7,14 +7,19 @@ call pathogen#infect('bundle/{}')
 call pathogen#helptags()
 " runtime bundle/vim-pathogen/autoload/pathogen.vim
 
-" syntax 
-syntax on
 
 " set vim size
+:set guifont=Consolas:h10
 :set lines=35 columns=150
+
+" set noundo filetype
+:set noundofile
 
 " Detection, Plugin, Indent
 filetype plugin indent on
+
+" syntax 
+syntax on
 
 " Buffers
 "Move to the previous buffer with "gp"
@@ -31,15 +36,20 @@ nnoremap gb :ls<CR>:b
 set nocp
 
 " NERDTree
-autocmd vimenter * NERDTree
-map <C-n> :NERDTreeToggle<CR>
+" autocmd vimenter * NERDTree
+" map <C-n> :NERDTreeToggle<CR>
 
 " Vim-Notes 
+:let vim_markdown_preview_github=1
 :let g:notes_directories = [ '~/Documents/Notes' ]
 :let g:notes_suffix = '.md'
 :let g:notes_title_sync = 1 
 :let g:notes_markdown_program ='~/Typora/Typora.exe'
 set colorcolumn=160 number
+
+ "Example: To display images automatically on buffer write.
+" let vim_markdown_preview_toggle=2
+" let vim_markdown_preview_browser='Google Chrome'
 
 " Color Scheme
 colorscheme gruvbox
